@@ -24,7 +24,7 @@ public class WordFrequencies {
         for (String s : fr.words()) {
             int index = myWords.indexOf(s.toLowerCase());
             if(index== -1){
-                myWords.add(s);
+                myWords.add(s.toLowerCase());
                 myFreqs.add(1);
                 
             }else{
@@ -53,7 +53,7 @@ public class WordFrequencies {
 
         }
         int mm = findIndexOfMax();
-                    System.out.println(" most word: " + myWords.get(mm) + " occur "+ myFreqs.get(mm) + " times");
+        System.out.println(" most word: " + myWords.get(mm) + " occur "+ myFreqs.get(mm) + " times");
         
     }
 }

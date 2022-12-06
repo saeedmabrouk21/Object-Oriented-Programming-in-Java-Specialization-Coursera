@@ -59,11 +59,12 @@ public class CharactersInPlay {
         findAllCharacters();
         System.out.println("Number of characters: " + names.size());
         for(int i  = 0 ; i < names.size();i++){
-            System.out.println("character : " + names.get(i) + " occur "+ counts.get(i) + " times");
+            if(counts.get(i)<=105&&counts.get(i)>=10)
+                System.out.println("character : " + names.get(i) + " occur "+ counts.get(i) + " times");
 
         }
         int mm = findIndexOfMax();
         System.out.println(" most word: {" + names.get(mm) + "| occur "+ counts.get(mm) + " times");
-        charactersWithNumParts(10,15);
+        charactersWithNumParts(50,105);
     }
 }

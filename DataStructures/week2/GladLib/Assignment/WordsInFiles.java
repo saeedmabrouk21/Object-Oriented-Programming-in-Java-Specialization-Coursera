@@ -1,3 +1,5 @@
+package Assignment;
+
 
 /**
  * Write a description of WordsInFiles here.
@@ -61,14 +63,14 @@ public class WordsInFiles {
     }
     public void tester(){
         buildWordFileMap();
-        System.out.println(maxNumber());
+        //System.out.println(maxNumber());
         System.out.println("----------------------------------");
-        ArrayList words = wordsInNumFiles(3);
-        
+        ArrayList words = wordsInNumFiles(4);
+        //System.out.println(words.size());
         for(int i = 0 ; i < words.size();i++){
-            System.out.println(words.get(i));
+        //    System.out.println(words.get(i));
         }
         System.out.println("----------------------------------");
-        printFilesIn("cats");
+        printFilesIn("laid");
     }
 }
